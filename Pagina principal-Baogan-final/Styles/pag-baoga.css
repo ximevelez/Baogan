@@ -1,0 +1,497 @@
+:root{
+    /*Paleta de colores principales*/
+    --rojo--: #9a1922;   
+    --Blanco-hueso--: #ead2b0;  /*Btn menú*/
+    /*Paleta de colores secundarios*/
+   --Amarillo--: #fdc938;
+    --Blanco--: #ffffff;
+    --Negro--: #090a0a; 
+ } 
+
+@font-face{
+    font-family: 'radgivare';
+    src: url("../Fonts/ardillah/Ardillah\ Kafi.ttf");
+}
+.text-radgivare{
+    font-family: 'radgivare';
+    font-size: 30px;
+}
+@font-face{
+    font-family: "louis-george";
+/*     src: url("../Fonts/louis-george-caf/Louis\ George\ Cafe\ Bold\ Italic.ttf"); */
+    src: url("../Fonts/louis-george-caf/Louis\ George\ Cafe.ttf")
+}
+.text-louis-george{
+    font-family: 'louis-george';
+    font-size: 20px;
+}
+.btn-des{
+    background-color: #ffffff;
+}
+.img-des{
+    width: 400px;
+    height: 300px;
+}
+.img-des-vale{
+    width: 400px;
+    height: 300px;
+
+}
+
+
+/* @font-face{
+    font-family: "louis-george";
+    src: url("../Fonts/louis-george-caf/Louis-George-Cafe-Bold-Italic.ttf")
+} */
+/* @font-face{
+    font-family: 'holyfat';
+    src: url(./Bootstrap_Cancat/Holyfat.ttf);
+} */
+/* .container{
+    background-color: #090a0a;
+} */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+/*     background-color: #f3eadc7e; */
+  /*   background-image: url(../Multimedia/bambu-fondo.png); */
+    /* background-image: url(../Multimedia/fondo-completo.jpg); */
+  /*   background-size: auto;
+    height: auto; */
+    /* background-color: rgba(253, 252, 250, 0.87); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #090a0a !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+/* .menu-hambur{
+    background-color: #0c0b09;
+} */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: var(--rojo--) !important;
+    font-family: 'louis-george';
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: var(--rojo--) !important;
+    font-family: 'radgivare';
+    font-size: 3rem;
+}
+
+.backside .card .card-text{
+    font-family: 'louis-george';
+    font-size: 30px;
+}
+
+
+.valen{
+    width: 350px;
+    height: 300px;
+}
+
+.xime{
+    width: 320px;
+    height: 310px;
+}
+
+.Baogan2{
+    width: 200px;
+}
+.Descubridores{
+    width: 200px;
+}
+.Aventurate{
+    width: 200px;
+}
+.ir-juego{
+    width: 200px;
+}
+.enviar{
+    background-color: #9a1922;
+    color: #ffffff;
+
+
+}
+.contenedor-principal{
+    background-color: #0c0b09;
+}
+.img-fluid{
+    margin-left: auto;
+}
+.menu{
+    background-color: #ffffff;
+    margin: 0 5rem;
+}
+.fotos-creadores{
+    max-width: 100%;
+    height: 100%;
+}
+.nav-link{
+    color: black;
+    background-color: #ead2b0 !important;
+    border-color: black;
+}
+.nav-link:hover{
+    background-color: #ead2b0 !important;
+    color: var(--rojo--);
+    opacity: 50%;
+    
+} 
+
+
+
+.introduccion{
+    color: var(--Negro--);
+    background-color: var(--Blanco-hueso--) ;
+    padding: 2rem;
+}
+.titulo-baogan{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 5rem 5rem 5rem;
+}
+/* .barra-menu{
+    border-radius: 10px;
+    width: 70%;
+    height: auto; 
+} */
+/* .menu-botones{
+    padding-right: 1rem;
+} */
+.baogan-final{
+    background-color: #9a1922;
+}
+.logo-principal{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 2rem; */
+}
+
+.pitch{
+    height: 500px;
+    width: 800px;
+    padding-top: 5rem;
+    /* padding-left: 20rem; */
+}
+.baogan{
+
+    color: #ead2b0;
+    padding: 1rem 1rem 1rem 1rem;
+/*     display: flex;
+    align-items: center; */
+    background-color: #9a1922d7;
+   /*  border-radius: 14px; */
+}
+
+.baogan-proyecto2{
+    background-color: #ead2b0;
+    padding: 1rem;
+    margin: 10rem;
+}
+.baogan-proyecto{
+    margin: 1rem;
+    color: white;
+    background-color: var(--rojo--);
+    padding: 1rem;
+    
+
+}
+
+.creadores{
+    /* margin: 10rem; */
+    color: white;
+    background-color: var(--rojo--);
+    padding: 1rem;
+    margin-top: 8rem;
+}
+.contenedor-baogan{
+    margin: 5rem;
+}
+.contenido-descubridores{
+    background-color: #9a1922;
+    color: white;
+    width: 1057px;
+    height: auto;
+}
+.img-mision{
+    width: 60px;
+    height: 50px;
+}
+.img-vision{
+    width: 50px;
+    height: 50px;
+}
+.mision{
+    padding: 5rem;
+}
+
+.contenido-mision{
+    background-color: var(--Blanco-hueso--);
+    color: var(--Negro--);
+    padding: 2rem;
+    width: 500px;
+    height: auto;
+}
+.conte-objetivo{
+    border-color: #9a1922;
+}
+.contenido-descubridores{
+    color: white;
+    background-color: #9a1922;
+    padding: 2rem;
+    width: 980px;
+    height: auto; 
+}
+.contenido-vision{
+    background-color: var(--Blanco-hueso--);
+    color: var(--Negro--);
+    padding: 2rem;
+    width: 500px;
+    height: auto;
+}
+.contenido-aventurate{
+    background-color: #ead2b0;
+    color: black;
+    padding: 2rem;
+ /*    width: 1057px;
+    height: auto; */
+
+}
+.contenido-des{
+    width: 310px;
+    height: 310px;
+}
+.sec-modal{
+    margin: 2rem;
+}
+.modal-des{
+    width: 400px;
+    height: 400px;
+}
+.modal-bao{
+    background-color: #9a1922;
+    box-shadow: #fdc938 1px 2px 1rem;
+}
+.contenido-final{
+    background-color: #ead2b0;
+    color: black;
+    padding: 2rem;
+    width: auto;
+    height: auto;
+}
+.img-objetivo{
+    width: 50px;
+    height: 45px;
+}
+ .btn-juego{
+    background-color: #9a1922;
+    color: var(--Blanco--);
+    border-radius: 20px;
+    width: 300px;
+    height: 80px;
+    
+}
+.btn-juego:hover{
+    background-color: #9a1922 !important;
+    color: var(--Blanco--);
+    opacity: 50%;
+}
+.card-body{
+    height: 15rem;
+    border-color: #fdc938;
+    box-shadow: #fdc938 1px 6px 2rem;
+
+  /*   width: 3rem; */
+}
+.card-body:hover{
+    transition: all 0.08s ease;
+    filter: opacity(70%);
+}
+.modal-bao:hover{
+   /*  transition: all 0.08s ease;
+    filter: opacity(70%); */
+    border-bottom: #fdc938;
+    /* box-shadow: #fdc938 1px 6px 2rem; */
+    box-shadow: #090a0a 1px 2px 1rem;
+} 
+
+.cerrar{
+    background-color: var(--rojo--);
+}
+
+.instrucciones{
+    background-color: #ead2b0;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+.pie-pagina{
+    background-color: #9a1922;
+    color: white;
+    
+/*     color: white;
+    padding: 2rem;
+    height: auto; */
+}
+.logos{
+    width: 3rem;
+    height: 2.5rem;
+}
+.iconos{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+.btn-footer:hover{
+    transition: all 0.08s ease;
+    filter: opacity(50%);
+}
+.ir-arriba{
+    animation: pelota 0.7s infinite alternate ease-out;
+    border-radius: 30px;
+    display: none;
+    padding: 20px;
+    background: #ead2b0;
+    font-size: 20px;
+    color: #090a0a;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.flecha{
+    width: 25px;
+    height: 15px;
+}
+@keyframes pelota {
+    0% {
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
